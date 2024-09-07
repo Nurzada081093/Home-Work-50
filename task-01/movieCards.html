@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -10,17 +14,33 @@
 <body>
 <div id="app"></div>
 <script type="text/babel">
+    const app = document.getElementById('app');
+
     const Card = ({name, year, image}) => {
         return (
-            <div>
-                <img src={image} alt={name}/>
-                <div>
-                    <h3>"{name}"</h3>
-                    <p>{year} года выпуска</p>
+            <div className="card">
+                <img className="movie-image" src={image} alt={name}/>
+                <div className="content">
+                    <h3 className="movie-title">"{name}"</h3>
+                    <p className="movie-year">{year} release</p>
                 </div>
             </div>
         );
     };
+
+    const movies = (
+        <>
+            <Card name="The Fault in Our Stars" year={2014} image="https://www.kino-teatr.ru/movie/posters/big/8/108718.jpg"/>
+            <Card name="Me Before You" year={2016} image="https://peterburg2.ru/uploads/16/05/20/o_807318.jpg"/>
+            <Card name="Узбечка" year={2022} image="https://avatars.mds.yandex.net/get-kinopoisk-image/10592371/83ad0312-760d-4749-bf1e-5f522d12f757/600x900"/>
+            <Card name="The Vow" year={2012} image="https://upload.wikimedia.org/wikipedia/ru/6/68/The_Vow.jpg"/>
+            <Card name="Hotel Mumbai" year={2018} image="https://upload.wikimedia.org/wikipedia/ru/2/2f/Hotel_Mumbai_%28film%2C_2018%29.jpg"/>
+            <Card name="Unbroken" year={2014} image="https://upload.wikimedia.org/wikipedia/ru/7/76/Unbroken_poster.jpg"/>
+        </>
+    );
+
+    ReactDOM.render(movies, app);
+
 </script>
 </body>
 </html>
