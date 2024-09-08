@@ -199,7 +199,6 @@ body {
 .request-block {
     background: url("https://media.istockphoto.com/id/1267814680/photo/fruit-cake-cake-decorated-with-berries-on-a-wooden-stand-on-a-black-background.jpg?s=612x612&w=0&k=20&c=u-uV9fFNLBKpIubQQRQ-TNotJHLddu3jxHwjjLw3Fwc=") no-repeat center;
     background-size: cover;
-    margin-bottom: 200px;
     margin-top: 0;
     padding-top: 0;
     height: 500px;
@@ -274,6 +273,41 @@ body {
 
 .form-btn:hover {
     background-color: rgba(166, 150, 150, 0.6);
+}
+
+.footer {
+    background-color: rgba(94, 87, 87, 0.97);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    color: rgba(246, 244, 244, 0.41);
+    font-weight: 600;
+}
+
+.address,
+.footer-phone,
+.email,
+.whatsapp {
+    display: flex;
+    align-items: center;
+}
+
+.footer-info a img {
+    margin-right: 8px;
 }
 
 

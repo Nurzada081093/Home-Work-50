@@ -169,6 +169,23 @@
         );
     };
 
+    const Footer = ({text, address, number, email}) => {
+        return (
+            <div className="footer">
+                <div className="container footer-info">
+                    <p className="footer-name">{text}</p>
+                    <a href="#" className="address"><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/FFFFFF/marker.png" alt="marker"/>{address}
+                    </a>
+                    <a href="#" className="footer-phone"><img width="24" height="24" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/phone--v1.png" alt="phone--v1"/>{number}
+                    </a>
+                    <a href="#" className="email"><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/FFFFFF/new-post.png" alt="new-post"/>{email}
+                    </a>
+                    <a href="#" className="whatsapp"><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/FFFFFF/whatsapp--v1.png" alt="whatsapp--v1"/>Whatsapp</a>
+                </div>
+            </div>
+        );
+    };
+
     const wholePage = (
         <>
             <Header image="https://i.pinimg.com/564x/6c/4f/47/6c4f47f500e6d61fe8d8a9db26cbb78e.jpg"/>
@@ -183,8 +200,8 @@
                       image1="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/external-cake-mother-day-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"
                       image2="https://img.icons8.com/external-photo3ideastudio-lineal-photo3ideastudio/64/external-strawberry-cake-supermarket-photo3ideastudio-lineal-photo3ideastudio.png" image3="https://cdn-icons-png.flaticon.com/128/5558/5558137.png" image4="https://img.icons8.com/carbon-copy/50/cupcake.png" image5="https://img.icons8.com/dotty/80/gingerbread-man.png"/>
             <LeaveRequest title="Оставить заявку" text="Оставьте заявку прямо сейчас и получите скидку на первый заказ 10%"/>
+            <Footer text="© 2006 Sweet Home" address="г.Бишкек, ул.Юнусалиева 250" number="+996 999 081 093" email="sweet_home@gmail.com"/>
         </>
-
     );
 
     ReactDOM.render(wholePage, app);
