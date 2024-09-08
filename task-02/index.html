@@ -77,15 +77,78 @@
         );
     };
 
+    const Products = ({
+                          title,
+                          name,
+                          name1,
+                          name2,
+                          name3,
+                          name4,
+                          name5,
+                          image,
+                          image1,
+                          image2,
+                          image3,
+                          image4,
+                          image5
+                      }) => {
+        return (
+            <div className="products-block">
+                <div className="container">
+                    <h2 className="products-title">{title}</h2>
+                    <div className="products">
+                        <div className="product">
+                            <img className="product-img" src={image} alt={name}/>
+                            <h4 className="product-title">{name}</h4>
+                            <button type="button" className="product-btn">Сделать заказ</button>
+                        </div>
+                        <div className="product">
+                            <img className="product-img" src={image1} alt={name1}/>
+                            <h4 className="product-title">{name1}</h4>
+                            <button type="button" className="product-btn">Сделать заказ</button>
+                        </div>
+                        <div className="product">
+                            <img className="product-img" src={image2} alt={name2}/>
+                            <h4 className="product-title">{name2}</h4>
+                            <button type="button" className="product-btn">Сделать заказ</button>
+                        </div>
+                        <div className="product">
+                            <img className="product-img" src={image3} alt={name3}/>
+                            <h4 className="product-title">{name3}</h4>
+                            <button type="button" className="product-btn">Сделать заказ</button>
+                        </div>
+                        <div className="product">
+                            <img className="product-img" src={image4} alt={name4}/>
+                            <h4 className="product-title">{name4}</h4>
+                            <button type="button" className="product-btn">Сделать заказ</button>
+                        </div>
+                        <div className="product">
+                            <img className="product-img" src={image5} alt={name5}/>
+                            <h4 className="product-title">{name5}</h4>
+                            <button type="button" className="product-btn">Сделать заказ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    };
 
     const wholePage = (
         <>
             <Header image="https://i.pinimg.com/564x/6c/4f/47/6c4f47f500e6d61fe8d8a9db26cbb78e.jpg"/>
-            <Sidebar name="Поиск" name1="Каталог" name2="Торт на заказ" name3="Акции" icon="https://img.icons8.com/material-outlined/24/FFFFFF/search--v1.png" icon1="https://img.icons8.com/ios-glyphs/30/FFFFFF/apps.png" icon2="https://img.icons8.com/wired/64/FFFFFF/purchase-order.png" icon3="https://img.icons8.com/material-sharp/24/FFFFFF/percentage.png" title="O нас" text="На свете мало людей, равнодушных к сладким  лакомствам. Торты, кексы, печенье - простые и  сложные, таящие во рту пирожные, изысканные трюфеля, восхитительные праздничные торты. И все эти лакомства предлагает Вам наш Кондитерский  Дом «Sweet House», двери которого открылись в августе 2006 года. Цель нашего производства - предоставить  возможность жителям наслаждаться изделиями, приготовленными из натуральных продуктов, без добавления консервантов, созданных  на основе всеми любимых домашних, а так же на основе европейских рецептов. Главным принципом нашей работы  -  является качество выпускаемой продукции, в строгом соответствии со стандартами. Для достижения этого, проводится контроль качества на всех этапах производственного процесса: от  сырья до готовой продукции. Каждое наше кондитерское изделие индивидуально и неповторимо, так как основа нашей работы - любовь и вложенная в изделие душа."/>
+            <Sidebar name="Поиск" name1="Каталог" name2="Торт на заказ" name3="Акции"
+                     icon="https://img.icons8.com/material-outlined/24/FFFFFF/search--v1.png"
+                     icon1="https://img.icons8.com/ios-glyphs/30/FFFFFF/apps.png"
+                     icon2="https://img.icons8.com/wired/64/FFFFFF/purchase-order.png"
+                     icon3="https://img.icons8.com/material-sharp/24/FFFFFF/percentage.png" title="O нас"
+                     text="На свете мало людей, равнодушных к сладким  лакомствам. Торты, кексы, печенье - простые и  сложные, таящие во рту пирожные, изысканные трюфеля, восхитительные праздничные торты. И все эти лакомства предлагает Вам наш Кондитерский  Дом «Sweet House», двери которого открылись в августе 2006 года. Цель нашего производства - предоставить  возможность жителям наслаждаться изделиями, приготовленными из натуральных продуктов, без добавления консервантов, созданных  на основе всеми любимых домашних, а так же на основе европейских рецептов. Главным принципом нашей работы  -  является качество выпускаемой продукции, в строгом соответствии со стандартами. Для достижения этого, проводится контроль качества на всех этапах производственного процесса: от  сырья до готовой продукции. Каждое наше кондитерское изделие индивидуально и неповторимо, так как основа нашей работы - любовь и вложенная в изделие душа."/>
+            <Products title="Наша продукция" name="Кофе" name1="Торты" name2="Пирожные" name3="Рулетики" name4="Кексы"
+                      name5="Пряники" image="https://img.icons8.com/ios/50/coffee-to-go.png"
+                      image1="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/external-cake-mother-day-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"
+                      image2="https://img.icons8.com/external-photo3ideastudio-lineal-photo3ideastudio/64/external-strawberry-cake-supermarket-photo3ideastudio-lineal-photo3ideastudio.png" image3="https://cdn-icons-png.flaticon.com/128/5558/5558137.png" image4="https://img.icons8.com/carbon-copy/50/cupcake.png" image5="https://img.icons8.com/dotty/80/gingerbread-man.png"/>
         </>
 
     );
-
 
     ReactDOM.render(wholePage, app);
 </script>
