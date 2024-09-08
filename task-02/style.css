@@ -146,7 +146,8 @@ body {
 
 .products-block {
     background-color: #f5f5f5;
-    margin-bottom: 50px;
+    margin: 0;
+    padding-bottom: 40px;
 }
 
 .products-title {
@@ -159,7 +160,6 @@ body {
 
 .products {
     display: flex;
-    margin: 20px auto;
     justify-content: space-between;
 }
 
@@ -168,7 +168,6 @@ body {
     text-align: center;
     width: 150px;
     border-radius: 10px;
-    margin-bottom: 50px;
 }
 
 .product:hover {
@@ -177,7 +176,6 @@ body {
 
 .product-title {
     color: rgba(211, 83, 14, 0.81);
-
 }
 
 .product-img {
@@ -197,4 +195,86 @@ body {
     text-decoration: underline;
     color: #a54b07;
 }
+
+.request-block {
+    background: url("https://media.istockphoto.com/id/1267814680/photo/fruit-cake-cake-decorated-with-berries-on-a-wooden-stand-on-a-black-background.jpg?s=612x612&w=0&k=20&c=u-uV9fFNLBKpIubQQRQ-TNotJHLddu3jxHwjjLw3Fwc=") no-repeat center;
+    background-size: cover;
+    margin-bottom: 200px;
+    margin-top: 0;
+    padding-top: 0;
+    height: 500px;
+}
+
+.request-title {
+    padding-top: 60px;
+    text-align: center;
+    background-color: rgba(74, 53, 53, 0.7);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.request-text {
+    padding-top: 40px;
+    text-align: center;
+    background-color: rgba(74, 53, 53, 0.7);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form-request {
+    margin-top: 0;
+    padding-top: 40px;
+    text-align: center;
+    background-color: rgba(74, 53, 53, 0.7);
+    padding-bottom: 57px;
+}
+
+.input-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.input-block input {
+    margin-top: 10px;
+    width: 350px;
+    height: 30px;
+    background-color: rgba(166, 150, 150, 0.6);
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+}
+
+.comment {
+    text-align: left;
+    font-size: 15px;
+}
+
+.user-comment {
+    margin-top: 10px;
+    background-color: rgba(166, 150, 150, 0.6);
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.form-btn {
+    width: 150px;
+    height: 40px;
+    background-color: orange;
+    border: transparent;
+    color: white;
+    text-transform: uppercase;
+}
+
+.form-btn:hover {
+    background-color: rgba(166, 150, 150, 0.6);
+}
+
+
 

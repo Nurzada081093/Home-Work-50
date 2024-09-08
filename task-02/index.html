@@ -133,6 +133,42 @@
         );
     };
 
+    const LeaveRequest = ({title, text}) => {
+        return (
+            <div className="request-block">
+                <h3 className="request-title">{title}</h3>
+                <p className="request-text">{text}</p>
+                <form className="form-request">
+                    <div className="input-block container">
+                        <label>
+                            Ваше имя:*
+                            <br/>
+                            <input type="text" required/>
+                        </label>
+                        <label>
+                            Эл.почта:*
+                            <br/>
+                            <input type="email" required/>
+                        </label>
+                        <label>
+                            Телефон:*
+                            <br/>
+                            <input type="text" required/>
+                        </label>
+                    </div>
+                    <div className="comment container">
+                        <label>
+                            Комментарии:
+                            <br/>
+                            <textarea className="user-comment"></textarea>
+                        </label>
+                    </div>
+                    <button type="submit" className="form-btn">Отправть</button>
+                </form>
+            </div>
+        );
+    };
+
     const wholePage = (
         <>
             <Header image="https://i.pinimg.com/564x/6c/4f/47/6c4f47f500e6d61fe8d8a9db26cbb78e.jpg"/>
@@ -146,6 +182,7 @@
                       name5="Пряники" image="https://img.icons8.com/ios/50/coffee-to-go.png"
                       image1="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/external-cake-mother-day-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"
                       image2="https://img.icons8.com/external-photo3ideastudio-lineal-photo3ideastudio/64/external-strawberry-cake-supermarket-photo3ideastudio-lineal-photo3ideastudio.png" image3="https://cdn-icons-png.flaticon.com/128/5558/5558137.png" image4="https://img.icons8.com/carbon-copy/50/cupcake.png" image5="https://img.icons8.com/dotty/80/gingerbread-man.png"/>
+            <LeaveRequest title="Оставить заявку" text="Оставьте заявку прямо сейчас и получите скидку на первый заказ 10%"/>
         </>
 
     );
