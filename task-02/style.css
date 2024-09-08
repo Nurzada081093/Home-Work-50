@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.87);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.container {
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.header {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    border-radius: 50%;
+    cursor: auto;
+}
+
+.logo-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.main-nav {
+    width: 90%;
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    margin-top: 50px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: rgb(117, 177, 209);
+    text-decoration: underline;
+}
+
+.contacts {
+    height: 60px;
+}
+
+.phone {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.phone-icon {
+    width: 30px;
+    height: 30px;
+}

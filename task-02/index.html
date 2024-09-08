@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<div id="app"></div>
+<script type="text/babel">
+    const app = document.getElementById('app');
+
+    const Header = ({image}) => {
+        return (
+            <header className="header">
+                <div className="container header-container">
+                    <nav className="main-nav">
+                        <ul>
+                            <li><a href="#" className="link">Главная</a></li>
+                            <li><a href="#" className="link">Каталог</a></li>
+                            <li><a href="#" className="link">Оптовая продажа</a></li>
+                            <li><a href="#" className="logo">
+                                <img className="logo-img" src={image} alt="Кондитерский дом"/>
+                            </a></li>
+                            <li><a href="#" className="link">O нас</a></li>
+                            <li><a href="#" className="link">Блог кондитера</a></li>
+                            <li><a href="#" className="link">Товары дня</a></li>
+                        </ul>
+                    </nav>
+                    <div className="contacts">
+                        <button type="button" className="phone"><img className="phone-icon" src="https://img.icons8.com/ios-filled/50/FFFFFF/phone.png" alt="phone"/></button>
+                    </div>
+                </div>
+            </header>
+        );
+    };
+
+    const wholePage = (
+        <>
+            <Header image="https://i.pinimg.com/564x/6c/4f/47/6c4f47f500e6d61fe8d8a9db26cbb78e.jpg"/>
+        </>
+
+    );
+
+
+    ReactDOM.render(wholePage, app);
+</script>
+</body>
+</html>
