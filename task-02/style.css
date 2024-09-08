@@ -22,14 +22,17 @@ body {
 }
 
 .header {
-    margin-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
+    background: url("https://media.istockphoto.com/id/975053090/photo/cake-with-blueberries-on-a-black-background-decorated-with-small-green-leaves-and-fresh-berries.jpg?s=612x612&w=0&k=20&c=OwkAfcP8I6gZcMF-yjd6kkpdxt_u7-BkX5bziiKv4zQ=") no-repeat center;
+    background-size: cover;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 500px;
 }
 
 .logo {
@@ -88,4 +91,55 @@ body {
 .phone-icon {
     width: 30px;
     height: 30px;
+}
+
+.main-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav-item {
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav-link {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.main-nav-link:hover {
+    color: #39c0d6;
+    font-weight: 600;
+}
+
+.icon-sidebar {
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar {
+    width: 20%;
+    margin-top: 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.title {
+   font-weight: 700;
+}
+
+.text-info{
+    width: 75%;
+    word-break: break-word;
+    text-align: justify;
 }

@@ -37,16 +37,51 @@
                         </ul>
                     </nav>
                     <div className="contacts">
-                        <button type="button" className="phone"><img className="phone-icon" src="https://img.icons8.com/ios-filled/50/FFFFFF/phone.png" alt="phone"/></button>
+                        <button type="button" className="phone"><img className="phone-icon"
+                                                                     src="https://img.icons8.com/ios-filled/50/FFFFFF/phone.png"
+                                                                     alt="phone"/></button>
                     </div>
                 </div>
             </header>
         );
     };
 
+    const Sidebar = ({name, name1, name2, name3, icon, icon1, icon2, icon3, title, text}) => {
+        return (
+            <nav className="nav container">
+                <aside className="sidebar">
+                    <ul className="main-nav-list">
+                        <li className="main-nav-item">
+                            <a href="#" className="main-nav-link">{name}</a>
+                            <img className="icon-sidebar" src={icon} alt={name}/>
+                        </li>
+                        <li className="main-nav-item">
+                            <a href="#" className="main-nav-link">{name1}</a>
+                            <img className="icon-sidebar" src={icon1} alt={name1}/>
+                        </li>
+                        <li className="main-nav-item">
+                            <a href="#" className="main-nav-link">{name2}</a>
+                            <img className="icon-sidebar" src={icon2} alt={name2}/>
+                        </li>
+                        <li className="main-nav-item">
+                            <a href="#" className="main-nav-link">{name3}</a>
+                            <img className="icon-sidebar" src={icon3} alt={name3}/>
+                        </li>
+                    </ul>
+                </aside>
+                <div className="text-info">
+                    <h1 className="title">{title}</h1>
+                    <p>{text}</p>
+                </div>
+            </nav>
+        );
+    };
+
+
     const wholePage = (
         <>
             <Header image="https://i.pinimg.com/564x/6c/4f/47/6c4f47f500e6d61fe8d8a9db26cbb78e.jpg"/>
+            <Sidebar name="Поиск" name1="Каталог" name2="Торт на заказ" name3="Акции" icon="https://img.icons8.com/material-outlined/24/FFFFFF/search--v1.png" icon1="https://img.icons8.com/ios-glyphs/30/FFFFFF/apps.png" icon2="https://img.icons8.com/wired/64/FFFFFF/purchase-order.png" icon3="https://img.icons8.com/material-sharp/24/FFFFFF/percentage.png" title="O нас" text="На свете мало людей, равнодушных к сладким  лакомствам. Торты, кексы, печенье - простые и  сложные, таящие во рту пирожные, изысканные трюфеля, восхитительные праздничные торты. И все эти лакомства предлагает Вам наш Кондитерский  Дом «Sweet House», двери которого открылись в августе 2006 года. Цель нашего производства - предоставить  возможность жителям наслаждаться изделиями, приготовленными из натуральных продуктов, без добавления консервантов, созданных  на основе всеми любимых домашних, а так же на основе европейских рецептов. Главным принципом нашей работы  -  является качество выпускаемой продукции, в строгом соответствии со стандартами. Для достижения этого, проводится контроль качества на всех этапах производственного процесса: от  сырья до готовой продукции. Каждое наше кондитерское изделие индивидуально и неповторимо, так как основа нашей работы - любовь и вложенная в изделие душа."/>
         </>
 
     );
